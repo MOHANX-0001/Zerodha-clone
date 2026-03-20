@@ -1,252 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerodha: Online brokerage platform for stock trading &amp; investing</title>
-    <link rel="shortcut icon" href="./zerodhalog.png" type="image/x-icon">
-    <link rel="stylesheet" href="./index.css
-    ">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Inter:400,500" rel="stylesheet">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerodha: Online brokerage platform for stock trading &amp; investing</title>
+  <link rel="shortcut icon" href="https://zerodha.com/static/images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-    <div class="viewport">
-        <div class="navBar">
-            <div class="logo"> <img src="https://zerodha.com/static/images/logo.svg" alt=""></div>
-            <div class="menu">
-                <div class="menus">
-                    <ul type="none">
-                        <li>Signup</li>
-                        <li>About</li>
-                        <li>Product </li>
-                        <li>Pricing</li>
-                        <li>Support</li>
-                        <li><i class="ri-menu-line"></i></li>
-                    </ul>
-                </div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Signup</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content reveal">
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      Trusted by 1.5+ crore investors
+    </div>
+    <h1 class="hero-title">Invest in<br><span class="hero-accent">everything.</span></h1>
+    <p class="hero-sub">Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
+    <a href="#" class="btn-primary">Sign up for free <i class="ri-arrow-right-line"></i></a>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hs-num">1.5+ Cr</span>
+        <span class="hs-lbl">Active customers</span>
+      </div>
+      <div class="hs-sep"></div>
+      <div class="hero-stat">
+        <span class="hs-num">₹4.5+ L Cr</span>
+        <span class="hs-lbl">Equity investments</span>
+      </div>
+      <div class="hs-sep"></div>
+      <div class="hero-stat">
+        <span class="hs-num">15%</span>
+        <span class="hs-lbl">Daily retail volume</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual reveal-right">
+    <img src="https://zerodha.com/static/images/landing.png" alt="Zerodha Platform" />
+  </div>
+</section>
+
+
+<!-- TRUST -->
+<section class="trust-section">
+  <div class="container">
+    <div class="two-col">
+      <div class="trust-text reveal">
+        <div class="label">Why Zerodha</div>
+        <h2 class="h2">Trust with<br>confidence.</h2>
+        <div class="trust-list">
+          <div class="trust-item">
+            <div class="ti-icon"><i class="ri-shield-check-line"></i></div>
+            <div class="ti-body">
+              <h4>Customer-first always</h4>
+              <p>1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.</p>
             </div>
-        </div>
-        <div class="mainimg">
-            <img src="https://zerodha.com/static/images/landing.png" alt="">
-        </div>
-        <div class="description">
-            <h1>Invest in everything</h1>
-            <p>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-            <div class="btn">Sign up for free</div>
-        </div>
-
-        <div class="content">
-            <div class="service">
-                <h1>Trust with confidence</h1>
-
-                <h3>Customer-first always</h3>
-                <p> That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores of equity investments and
-                    contribute
-                    to 15% of daily retail exchange volumes in India.</p>
-
-
-                <h3> No spam or gimmicks</h3>
-                <p>No gimmicks, spam, "gamification", or annoying push notifications.
-                    High quality apps that you use at your pace, the way you like.</p>
-                <h3>The Zerodha universe</h3>
-                <p>Not just an app, but a whole ecosystem. Our investments in 30+ fintech
-                    startups offer you tailored services specific to your needs.</p>
-
-                <h3>Do better with money</h3>
-                <p>With initiatives like Nudge and Kill Switch, we don't just facilitate
-                    transactions, but actively help you do better with your money</p>
-
+          </div>
+          <div class="trust-item">
+            <div class="ti-icon"><i class="ri-spam-2-line"></i></div>
+            <div class="ti-body">
+              <h4>No spam or gimmicks</h4>
+              <p>No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like.</p>
             </div>
-            <div class="serviceImg">
-                <img src="https://zerodha.com/static/images/ecosystem.png" alt="">
-                <div class="elements">
-                    <div class="explore">
-                        Explore our products
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                    <div class="demo"> Try Kite demo
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
+          </div>
+          <div class="trust-item">
+            <div class="ti-icon"><i class="ri-apps-2-line"></i></div>
+            <div class="ti-body">
+              <h4>The Zerodha universe</h4>
+              <p>Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
             </div>
-
-        </div>
-        <div class="presslogo">
-            <img src="https://zerodha.com/static/images/press-logos.png" alt="">
-        </div>
-        <div class="priceBox">
-            <div class="pricing">
-                <h2>Unbeatable pricing</h2>
-                <p> We pioneered the concept of discount broking and price
-                    transparency in India. Flat fees and no hidden charges.</p>
-                <p class="see">See pricing
-                    <i class="ri-arrow-right-line"></i>
-                </p>
+          </div>
+          <div class="trust-item">
+            <div class="ti-icon"><i class="ri-seedling-line"></i></div>
+            <div class="ti-body">
+              <h4>Do better with money</h4>
+              <p>With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
             </div>
-            <div class="acc">
-                <div class="img1"> <img src="https://zerodha.com/static/images/pricing-eq.svg" alt="">
-                    <p> Free account
-                        opening</p>
-                </div>
-                <div class="img2"><img src="https://zerodha.com/static/images/pricing-eq.svg" alt="">
-                    <p>Free equity delivery
-                        and direct mutual funds</p>
-                </div>
-                <div class="img3"> <img src="https://zerodha.com/static/images/other-trades.svg" alt="">
-                    <p> ntraday and
-                        F&O</p>
-                </div>
+          </div>
+        </div>
+        <div class="inline-links">
+          <a href="#" class="link-btn">Explore our products <i class="ri-arrow-right-line"></i></a>
+          <a href="#" class="link-btn">Try Kite demo <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+      <div class="trust-img reveal-right">
+        <img src="https://zerodha.com/static/images/ecosystem.png" alt="Zerodha Ecosystem" />
+      </div>
+    </div>
+    <div class="press-row reveal">
+      <span class="press-lbl">As featured in</span>
+      <img src="https://zerodha.com/static/images/press-logos.png" alt="Press" />
+    </div>
+  </div>
+</section>
+
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="two-col pricing-layout">
+      <div class="pricing-left reveal">
+        <div class="label">Pricing</div>
+        <h2 class="h2">Unbeatable<br>pricing.</h2>
+        <p>We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
+        <a href="#" class="link-btn" style="margin-top:1.8rem">See pricing <i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="price-cards reveal">
+        <div class="price-card">
+          <div class="pcard-img"><img src="https://zerodha.com/static/images/pricing-eq.svg" alt="" /></div>
+          <div class="pcard-amount">₹0</div>
+          <div class="pcard-desc">Free account opening</div>
+        </div>
+        <div class="price-card">
+          <div class="pcard-img"><img src="https://zerodha.com/static/images/pricing-eq.svg" alt="" /></div>
+          <div class="pcard-amount">₹0</div>
+          <div class="pcard-desc">Equity delivery &amp; direct mutual funds</div>
+        </div>
+        <div class="price-card featured">
+          <div class="pcard-img"><img src="https://zerodha.com/static/images/other-trades.svg" alt="" /></div>
+          <div class="pcard-amount">₹20</div>
+          <div class="pcard-desc">Flat fee — intraday and F&amp;O</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section class="edu-section">
+  <div class="container">
+    <div class="two-col edu-layout">
+      <div class="edu-img reveal">
+        <img src="https://zerodha.com/static/images/index-education.svg" alt="Varsity" />
+      </div>
+      <div class="edu-text reveal-right">
+        <div class="label">Education</div>
+        <h2 class="h2">Free &amp; open<br>market education.</h2>
+        <div class="edu-cards">
+          <div class="edu-card">
+            <div class="ec-num">01</div>
+            <div>
+              <h4>Varsity</h4>
+              <p>The largest online stock market education book in the world — covering everything from the basics to advanced trading.</p>
+              <a href="#" class="link-btn">Learn on Varsity <i class="ri-arrow-right-line"></i></a>
             </div>
-        </div>
-        <div class="varsity">
-            <div class="varimg">
-                <img src="https://zerodha.com/static/images/index-education.svg" alt="">
+          </div>
+          <div class="edu-card">
+            <div class="ec-num">02</div>
+            <div>
+              <h4>TradingQ&amp;A</h4>
+              <p>The most active trading and investment community in India for all your market related queries.</p>
+              <a href="#" class="link-btn">Join TradingQ&amp;A <i class="ri-arrow-right-line"></i></a>
             </div>
-            <div class="textt">
-                <h2>Free and open market education</h2>
-                <p>Varsity, the largest online stock market education
-                    book in the world covering everything from the
-                    basics to advanced trading.</p>
-
-                <p class="var"> Varsity <i class="ri-arrow-right-line"></i> </p>
-                <p>TradingQ&A, the most active trading and investment
-                    community in India for all your market related
-                    queries.</p>
-
-                <p class="var">TradingQ&A <i class="ri-arrow-right-line"></i></p>
-            </div>
+          </div>
         </div>
-        <div class="openac">
-            <h3>Open a Zerodha account</h3>
-            <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
-            <div class="btn">Sign up for free</div>
-        </div>
-        <div class="footer">
-            <div class="page">
-                <div class="box1">
-                    <img src="https://zerodha.com/static/images/logo.svg" alt="">
-                    <p>© 2010 - 2025, Zerodha Broking Ltd.
+      </div>
+    </div>
+  </div>
+</section>
 
-                        All rights reserved.</p>
-                    <ul type="none">
-                        <li><i class="ri-twitter-x-line"></i></li>
-                        <li> <i class="ri-facebook-box-fill"></i></li>
-                        <li><i class="ri-instagram-line"></i></li>
-                        <li><i class="ri-linkedin-box-fill"></i></li>
-                    </ul>
-                    <hr>
-                    <ul type="none">
-                        <li> <i class="ri-youtube-fill"></i></li>
-                        <li><i class="ri-whatsapp-line"></i></li>
-                        <li><i class="ri-telegram-fill"></i></li>
-                    </ul>
-                </div>
-                <div class="box2">
-                    <p>Company</p>
-                    <ul type="none">
-                        <li>About </li>
-                        <li>Product </li>
-                        <li>Pricing</li>
-                        <li>Referral programme</li>
-                        <li>Careers</li>
-                        <li>Zerodha.tech
-                        </li>
-                        <li>Open source</li>
-                        <li>Press & media</li>
-                        <li>Zerodha Cares(CSR)</li>
-                    </ul>
-                </div>
-                <div class="box3">
-                    <p>Support</p>
-                    <ul type="none">
-                        <li>Contact us</li>
-                        <li> Support portal</li>
-                        <li> Z-Connect blog</li>
-                        <li> List of charges</li>
-                        <li> Downloads & resources</li>
-                        <li> Videos</li>
-                        <li> Market overview</li>
-                        <li> How to file a complaint?</li>
-                        <li> Status of your complaints</li>
 
-                    </ul>
-                </div>
-                <div class="box4">
-                    <p>Account</p>
-                    <ul type="none">
-                        <li>Open an account </li>
-                        <li> Fund transfer</li>
+<!-- OPEN ACCOUNT CTA -->
+<section class="open-cta">
+  <div class="cta-inner reveal">
+    <div class="label" style="justify-content:center;margin-bottom:1rem">Get started</div>
+    <h2>Open a Zerodha account.</h2>
+    <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&amp;O trades.</p>
+    <a href="#" class="btn-primary">Sign up for free <i class="ri-arrow-right-line"></i></a>
+  </div>
+</section>
 
-                    </ul>
-                </div>
-            </div>
 
-        </div>
-        <div class="div">
-            <div class="para">
-                <p>Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL:
-                    Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
-                    Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.:
-                    INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp.
-                    Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any
-                    complaints pertaining to securities broking please write to  <span class="mo">complaints@zerodha.com</span> for DP related
-                    to <span class="mo">dp@zerodha.com</span> Please ensure you carefully read the Risk Disclosure Document as prescribed by
-                    SEBI | ICF
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha" class="footer-logo" />
+      <p>© 2010 – 2025, Zerodha Broking Ltd.<br>All rights reserved.</p>
+      <div class="socials">
+        <a href="#"><i class="ri-twitter-x-line"></i></a>
+        <a href="#"><i class="ri-facebook-box-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
+        <a href="#"><i class="ri-telegram-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Referral programme</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Zerodha.tech</a></li>
+        <li><a href="#">Open source</a></li>
+        <li><a href="#">Press &amp; media</a></li>
+        <li><a href="#">Zerodha Cares (CSR)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Support portal</a></li>
+        <li><a href="#">Z-Connect blog</a></li>
+        <li><a href="#">List of charges</a></li>
+        <li><a href="#">Downloads &amp; resources</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Market overview</a></li>
+        <li><a href="#">How to file a complaint?</a></li>
+        <li><a href="#">Status of your complaints</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Account</h5>
+      <ul>
+        <li><a href="#">Open an account</a></li>
+        <li><a href="#">Fund transfer</a></li>
+      </ul>
+    </div>
+  </div>
 
-                    <br>
-                    <br>
-                    Procedure to file a complaint on <span class="mo">SEBI SCORES</span>: Register on SCORES portal. Mandatory details for
-                    filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
-                    Communication, Speedy redressal of the grievance
-                    <br>
-                    <br>
-                    <span class="mo">Smart Online Dispute Resolution | Grievances Redressal Mechanism</span>
-                    <br>
-                    <br>
-                    Investments in securities market are subject to market risks; read all the related documents
-                    carefully before investing.
-                    <br><br>
-                    Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of
-                    pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number
-                    with your stock broker / depository participant and receive OTP directly from depository on your
-                    e-mail and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the
-                    consolidated account statement issued by NSDL/CDSL every month.
-                    <br><br>
-                    "Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your
-                    stock brokers. Receive information of your transactions directly from Exchange on your mobile/email
-                    at the end of the day. Issued in the interest of investors. KYC is one time exercise while dealing
-                    in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual
-                    Fund etc.), you need not undergo the same process again when you approach another intermediary."
-                    Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque. Please write
-                    the Bank account number and sign the IPO application form to authorize your bank to make payment in
-                    case of allotment. In case of non allotment the funds will remain in your bank account. As a
-                    business we don't give stock tips, and have not authorized anyone to trade on behalf of others. If
-                    you find anyone claiming to be part of Zerodha and offering such services, please <span class="mo">create a ticket
-                    here.</span>
-                </p>
-            </div>
-        </div>
-        <div class="policies">
-            <ul type="none">
-                <li> NSE</li>
-                <li> BSE</li>
-                <li> MCX</li>
-                <li> Terms & conditions</li>
-                <li> Policies & procedures</li>
-                <li> Privacy policy </li>
-                <li> Disclosure</li>
-                <li> For investor's attention</li>
-                <li> Investor charter</li>
-            </ul>
+  <div class="footer-legal">
+    <p>Zerodha Broking Ltd.: Member of NSE, BSE &amp; MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.: INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any complaints pertaining to securities broking please write to <a href="#">complaints@zerodha.com</a>; for DP related to <a href="#">dp@zerodha.com</a>. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
+    <p>Procedure to file a complaint on <a href="#">SEBI SCORES</a>: Register on SCORES portal. Mandatory details: Name, PAN, Address, Mobile Number, E-mail ID.</p>
+    <p><a href="#">Smart Online Dispute Resolution | Grievances Redressal Mechanism</a></p>
+    <p>Investments in securities market are subject to market risks; read all the related documents carefully before investing.</p>
+    <p>Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number with your stock broker / depository participant and receive OTP directly from depository on your e-mail and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month. "Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers. Receive information of your transactions directly from Exchange on your mobile/email at the end of the day." — KYC is a one time exercise. If you find anyone claiming to be part of Zerodha and offering tips or trading on your behalf, please <a href="#">create a ticket here</a>.</p>
+  </div>
 
-        </div>
+  <div class="footer-policies">
+    <ul>
+      <li><a href="#">NSE</a></li>
+      <li><a href="#">BSE</a></li>
+      <li><a href="#">MCX</a></li>
+      <li><a href="#">Terms &amp; conditions</a></li>
+      <li><a href="#">Policies &amp; procedures</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Disclosure</a></li>
+      <li><a href="#">For investor's attention</a></li>
+      <li><a href="#">Investor charter</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  });
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 90);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal, .reveal-right').forEach(el => obs.observe(el));
+</script>
 </body>
-
 </html>
